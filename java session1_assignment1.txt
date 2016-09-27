@@ -1,0 +1,88 @@
+
+1.Program to reverse the values of two numbers
+package assignment1;
+import java.io.*;
+import java.util.*;
+
+public class reversenum 
+{
+  public static void main(String[] args)
+  {
+	int sum;
+	System.out.println("Enter the 1st number:");
+	Scanner s=new Scanner(System.in);
+	int a=s.nextInt();
+	System.out.println("Enter the second number:");
+	int b=s.nextInt();
+	a=a+b;
+	b=a-b;
+	a=a-b;
+	System.out.println("Now the 1st number is:" +a);
+	System.out.println("Now the second number is:" +b);
+	
+   }
+}
+
+2.program to print the values of the following calculations
+
+ublic class calculation {
+	public static void main(String[] args) 
+	{
+		int a=20,b=10;
+		int check=a--;
+		int check1=--a;
+		System.out.println("value of a--:" +check);
+		System.out.println("value of --a:" +check1);
+		
+		b=(a--) - (--a);
+		
+		System.out.println("value of b is:" +b);
+		int c=a--;
+		System.out.println("value of c is:" +c);
+		
+		int d=a>>2;
+		System.out.println("value of d is:" +d);
+		
+		int e=a&b;
+		System.out.println("value of e is:" +e);
+	}
+
+}
+
+
+3.Program to print the alphabets using ascii values form 65 to 90
+
+public class Ascii {
+	public static void main(String[] args)
+	{
+		char alpha;
+		System.out.println("Ascii values are:");
+		for(int i=65;i<=90;i++)
+		{
+			
+		System.out.println(+i+" -"+(char)i);
+	}
+		}
+
+}
+
+4.Program to calculate sumof 2 numbers without using + operator
+
+public class sumofnum 
+{
+public static void main(String[] args)
+ {
+	int a=2,b=6;
+	
+	while(b!=0)
+	{
+		int carry= a&b;
+		a=a^b;
+		b= carry<<1;
+	}
+	
+      System.out.println("sum is" + a);
+ }
+}
+
+
